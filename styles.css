@@ -1,0 +1,101 @@
+/* Cấu hình cho toàn bộ phần tử body */
+body {
+    font-family: Arial, sans-serif; /* Đặt font chữ chính là Arial, fallback là sans-serif */
+    margin: 0; /* Loại bỏ khoảng cách ngoài của phần tử body */
+    padding: 0; /* Loại bỏ khoảng cách bên trong của phần tử body */
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con */
+    flex-direction: column; /* Đặt hướng các phần tử con theo chiều dọc (cột) */
+    height: 100vh; /* Chiều cao của body bằng 100% chiều cao của viewport */
+}
+
+/* Cấu hình cho thanh header */
+.header {
+    background-color: #3d3c3c; /* Đặt màu nền của header thành màu xanh lá cây */
+    color: white; /* Đặt màu chữ của header thành màu trắng */
+    padding: 0.1px 0; /* Thêm khoảng cách bên trong của header */
+    position: relative; /* Đặt vị trí tương đối để có thể điều chỉnh các mũi tên */
+}
+
+.header-nav {
+    
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo chiều ngang */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu nội dung vượt quá chiều rộng của thanh điều hướng */
+    white-space: nowrap; /* Ngăn chặn xuống dòng của các phần tử con */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+}
+
+.header-nav a {
+    color: white; /* Đặt màu chữ của các liên kết thành màu trắng */
+    padding: 14px 20px; /* Thêm khoảng cách bên trong các liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân khỏi các liên kết */
+    text-align: center; /* Căn giữa văn bản trong các liên kết */
+    display: inline-block; /* Hiển thị các liên kết dưới dạng phần tử khối inline */
+}
+
+.header-nav a:hover {
+    background-color: #179f2b; /* Đổi màu nền của liên kết khi di chuột qua thành màu xanh lá cây nhạt hơn */
+}
+
+.nav-arrow {
+    color: white; /* Đặt màu chữ của các mũi tên thành màu trắng */
+    font-size: 24px; /* Đặt kích thước chữ của các mũi tên */
+    text-decoration: none; /* Loại bỏ gạch chân khỏi các mũi tên */
+    padding: 14px 20px; /* Thêm khoảng cách bên trong các mũi tên */
+    cursor: pointer; /* Đặt con trỏ chuột thành dạng tay khi di chuột qua các mũi tên */
+}
+
+.nav-arrow:hover {
+    background-color: #45a049; /* Đổi màu nền của các mũi tên khi di chuột qua thành màu xanh lá cây nhạt hơn */
+}
+
+/* Cấu hình cho container chính chứa nội dung */
+.main-container {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo chiều ngang */
+    flex: 1; /* Cho phép container mở rộng để chiếm không gian còn lại trong body */
+}
+
+/* Cấu hình cho thanh điều hướng dọc */
+.sidebar {
+    width: 200px; /* Đặt chiều rộng của thanh điều hướng dọc */
+    background-color: #ffffff; /* Đặt màu nền của thanh điều hướng dọc thành màu xám tối */
+    color: #000000; /* Đặt màu chữ của các liên kết trong thanh điều hướng dọc thành màu trắng */
+    padding-top: 10px; /* Thêm khoảng cách trên của các liên kết trong thanh điều hướng dọc */
+    overflow-y:scroll; /* Cho phép cuộn dọc nếu nội dung dài hơn chiều cao của thanh điều hướng */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng cho thanh điều hướng dọc */
+    line-height: 0.5px;
+}
+
+.sidebar a {
+    display: block; /* Hiển thị các liên kết dưới dạng phần tử khối */
+    color: #000000; /* Đặt màu chữ của các liên kết thành màu trắng */
+    padding: 14px 16px; /* Thêm khoảng cách bên trong các liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân khỏi các liên kết */
+    text-align: center; /* Căn giữa văn bản trong các liên kết */
+}
+
+.sidebar a:hover {
+    background-color: #15a712; /* Đổi màu nền của liên kết khi di chuột qua thành màu xám sáng */
+    color: black; /* Đổi màu chữ của liên kết khi di chuột qua thành màu đen */
+}
+
+/* Cấu hình cho nội dung chính */
+.content {
+    flex: 1; /* Cho phép nội dung mở rộng để chiếm không gian còn lại trong container chính */
+    padding: 20px; /* Thêm khoảng cách bên trong nội dung chính */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+.button{
+    background-color: #fff
+    color #000000;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
